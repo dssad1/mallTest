@@ -23,7 +23,7 @@ public class OmsPortalOrderReturnApplyServiceImpl implements OmsPortalOrderRetur
         OmsOrderReturnApply realApply = new OmsOrderReturnApply();
         BeanUtils.copyProperties(returnApply,realApply);
         realApply.setCreateTime(new Date());
-        realApply.setStatus(0);
+//        realApply.setStatus(0);
         return returnApplyMapper.insert(realApply);
     }
 }
